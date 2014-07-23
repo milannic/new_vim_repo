@@ -1,0 +1,13 @@
+diff --git a/plugin/visualmark.vim b/plugin/visualmark.vim
+index 964895c..135c18a 100644
+--- a/plugin/visualmark.vim
++++ b/plugin/visualmark.vim
+@@ -52,7 +52,7 @@ fun! s:GetVimCmdOutput(cmd)
+   let old_lang = v:lang
+ 
+   " Set the language to English
+-  exec ":lan mes en_US"
++  exec ":lan mes en_US.utf8"
+ 
+   let v:errmsg = ''
+   let output   = ''
