@@ -56,6 +56,8 @@ Plugin 'matchit.zip'
 Plugin 'Tabular'
 Plugin 'c.vim'
 Plugin 'repeat.vim'
+Plugin 'BufOnly.vim'
+
 
 
 " Git plugin not hosted on GitHub
@@ -132,3 +134,11 @@ let g:Tex_ViewRule_pdf='evince'
 
 
 silent! call repeat#set("\<Plug>MyWonderfulMap",v:count)
+:command Qq wqa
+:command Bfo BufOnly
+:command Rl  so $MYVIMRC
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
