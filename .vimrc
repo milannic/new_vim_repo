@@ -23,6 +23,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set matchpairs+=<:>
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
