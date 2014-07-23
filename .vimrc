@@ -52,6 +52,8 @@ Plugin 'Visual-Mark'
 Plugin 'ZenCoding.vim'
 Plugin 'genutils'
 Plugin 'surround.vim'
+Plugin 'matchit.zip'
+Plugin 'Tabular'
 
 
 " Git plugin not hosted on GitHub
