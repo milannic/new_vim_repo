@@ -38,6 +38,8 @@ Plugin 'gmarik/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'greyblake/vim-preview'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'The-NERD-tree'
@@ -49,7 +51,8 @@ Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'Visual-Mark'
 Plugin 'ZenCoding.vim'
 Plugin 'genutils'
-Plugin 'multiselect'
+Plugin 'surround.vim'
+
 
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
