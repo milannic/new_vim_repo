@@ -54,6 +54,8 @@ Plugin 'genutils'
 Plugin 'surround.vim'
 Plugin 'matchit.zip'
 Plugin 'Tabular'
+Plugin 'c.vim'
+Plugin 'repeat.vim'
 
 
 " Git plugin not hosted on GitHub
@@ -127,3 +129,6 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_ViewRule_pdf='evince'	
+
+
+silent! call repeat#set("\<Plug>MyWonderfulMap",v:count)
