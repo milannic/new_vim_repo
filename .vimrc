@@ -1,12 +1,10 @@
 "git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 set nocompatible
-filetype off
 set backspace=indent,eol,start
 set guifont=Monospace\ 16
 setlocal spell spelllang=en_us
 
 syntax enable
-syntax on
 colorscheme desert
 set number
 "set noautoindent
@@ -27,6 +25,7 @@ set matchpairs+=<:>
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+filetype off
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -39,8 +38,9 @@ Plugin 'gmarik/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'greyblake/vim-preview'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'The-NERD-tree'
@@ -48,7 +48,6 @@ Plugin 'minibufexplorerpp'
 Plugin 'taglist.vim'
 Plugin 'winmanager'
 Plugin 'grep.vim'
-Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'Visual-Mark'
 Plugin 'ZenCoding.vim'
 Plugin 'genutils'
@@ -56,7 +55,6 @@ Plugin 'surround.vim'
 Plugin 'matchit.zip'
 Plugin 'Tabular'
 Plugin 'a.vim'
-Plugin 'c.vim'
 Plugin 'repeat.vim'
 Plugin 'BufOnly.vim'
 
@@ -75,6 +73,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+syntax on
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -86,7 +85,14 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 let g:ycm_seed_identifiers_with_syntax=1
 let g:ycm_autoclose_preview_window_after_completion = 0

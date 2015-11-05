@@ -66,7 +66,7 @@ cppflags = [
 '-isystem',
 '/usr/local/include',
 '-isystem',
-'/usr/include/c++/4.8.2',
+'/usr/include/c++/4.8',
 ]
 
 cflags = [
